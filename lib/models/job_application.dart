@@ -52,5 +52,4 @@ class JobApplication {
       'appliedDate' : appliedDate?.toIso8601String() ,
     } ; 
   }
-
 }

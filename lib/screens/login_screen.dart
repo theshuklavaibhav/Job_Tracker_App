@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _obscurePassword = true;
 
   Future<void> _handleLogin() async {
-    final auth = await AuthProvider();
+    final auth =  context.read<AuthProvider>();
     final success = await auth.login(
       _emailController.text.trim(),
       _passwordController.text.trim(),
